@@ -1,0 +1,15 @@
+{
+  "name": "stockworthy",
+  "version": "1.0.0",
+  "description": "Basic Stock Searcher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Stock",
+    "Search"
+  ],
+  "author": "Jake Berry",
+  "license": "MIT"
+}
