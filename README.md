@@ -2,7 +2,7 @@ This is a basic stock application.
 
 Author: Jake Berry
 
-License: MIT License @copy; 2019
+License: MIT License
 
 It's goal is to:
 
