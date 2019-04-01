@@ -1,5 +1,5 @@
 import React from "react";
-import Trending from "../stocks/Trending";
+import Trending from "../Trending";
 import { Container } from "react-bootstrap";
 
 const Index = () => {

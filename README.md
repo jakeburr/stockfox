@@ -1,17 +1,23 @@
 This is a basic stock application.
 
 Author: Jake Berry
+License: MIT License &copy; 2019
 
-License: MIT License @copy; 2019
+Github / https://github.com/jakeburr
 
-It's goal is to:
+## The applications goal is to
 
-- Show Top 10 Trending Stocks
-- Quick Search a Stock
-- Show Basic Information
+- Quick search a stock to show quote
+- Show todays top 10 trending stocks
+- Show a stocks news
 
-## Starting Up
+## Getting Started
 
 1. cd frontend
 2. npm install
 3. npm run start
+
+## API List
+
+- IEX Cloud / https://iexcloud.io
+- News Api / https://newsapi.org
