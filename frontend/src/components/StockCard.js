@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "reactstrap";
 
 const StockCard = props => {
   const { stock } = props;
@@ -18,7 +18,7 @@ const StockCard = props => {
             {stock.companyName}
           </h4>
           <hr />
-          <Container>
+          <div>
             <Row>
               <Col>
                 <h5 style={{ textAlign: "center", fontWeight: "bold" }}>
@@ -77,7 +77,7 @@ const StockCard = props => {
                 </table>
               </Col>
             </Row>
-          </Container>
+          </div>
           <Link
             to={`/stockquote/${stock.symbol}`}
             className="btn btn-dark btn-block"

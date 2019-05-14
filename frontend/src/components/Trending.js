@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Consumer } from "../context";
 import Spinner from "./layout/Spinner";
-import { Row } from "react-bootstrap";
+import { Row } from "reactstrap";
 
 import StockCard from "./StockCard";
 

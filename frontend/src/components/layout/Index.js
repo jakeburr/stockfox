@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Trending from "../Trending";
-import { Container } from "react-bootstrap";
+
 
 const Index = () => {
   return (
-    <Container>
+    <Fragment>
       <Trending />
-    </Container>
+    </Fragment>
   );
 };
 

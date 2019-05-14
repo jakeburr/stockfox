@@ -30,6 +30,9 @@ const NavBar = () => {
               Home
             </a>
           </li>
+          <li>
+            <a className='nav-link' href='/register'>Register</a>
+          </li>
         </ul>
       </div>
     </nav>

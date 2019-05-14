@@ -10,31 +10,34 @@ class StockQuote extends Component {
     news: []
   };
 
-  componentDidMount() {
-    let token = keys.token;
-    let apiKey = keys.newsToken;
-    let symbol = this.props.match.params.id;
-    axios
-      .get(`https://cloud.iexapis.com/beta/stock/${symbol}/quote`, {
+  getData = async () => {
+    let token = keys.token
+    let apiKey = keys.newsToken
+    let symbol = this.props.match.params.id
+
+    try{
+      const fetchQuote = await axios.get(`https://cloud.iexapis.com/beta/stock/${symbol}/quote`, {
         params: {
           token
         }
+      }).then(quote => {
+        this.setState({quote: quote.data});
+        return axios.get('https://newsapi.org/v2/everything', {
+          params: {
+            q: symbol,
+            pageSize: 5,
+            apiKey
+          }
+        }).then(news => this.setState({news: news.data.articles}))
       })
-      .then(quote => {
-        this.setState({ quote: quote.data });
-        return axios
-          .get(`https://newsapi.org/v2/everything`, {
-            params: {
-              q: symbol,
-              pageSize: 5,
-              apiKey
-            }
-          })
-          .then(news => {
-            this.setState({ news: news.data.articles });
-          });
-      })
-      .catch(err => console.log(err));
+      fetchQuote();
+    }catch(err){
+      console.log('error')
+    }
+  }
+
+  componentDidMount() {
+    this.getData();
   }
 
   // Value checker
