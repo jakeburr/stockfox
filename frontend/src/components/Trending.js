@@ -1,12 +1,11 @@
-import React, { Component } from "react";
+import React from 'react'
 import { Consumer } from "../context";
 import Spinner from "./layout/Spinner";
 import { Row } from "reactstrap";
 
 import StockCard from "./StockCard";
 
-class Trending extends Component {
-  render() {
+const Trending = () => {
     return (
       <Consumer>
         {value => {
@@ -31,7 +30,7 @@ class Trending extends Component {
         }}
       </Consumer>
     );
-  }
+
 }
 
 export default Trending;

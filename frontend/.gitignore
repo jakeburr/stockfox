@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /src/assets/notes
+/src/components/layout/NewNavbar
 /.pnp
 .pnp.js
 

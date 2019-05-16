@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const NewNavbar = () => {
+  const [buttonText, setButtonText] = useState('Click me please!')
+
   return (
-    <div>
-      
-    </div>
+    <button onClick={() => setButtonText('Thanks, been clicked!')}>
+    {buttonText}
+    </button>
   )
 }
 

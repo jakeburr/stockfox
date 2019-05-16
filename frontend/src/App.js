@@ -4,7 +4,6 @@ import { Provider } from "./context";
 import "./App.css";
 
 import NavBar from "./components/layout/NavBar";
-import NewNavbar from './components/layout/NewNavbar'
 import Footer from "./components/layout/Footer";
 import Index from "./components/layout/Index";
 import StockQuote from "./components/layout/StockQuote";

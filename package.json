@@ -11,5 +11,8 @@
     "Search"
   ],
   "author": "Jake Berry",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6"
+  }
 }
